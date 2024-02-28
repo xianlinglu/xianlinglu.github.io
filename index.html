@@ -1,1 +1,25 @@
-箫声远
+<!DOCTYPE html>
+<html>
+<head>
+  <title>随机选择元素并写入HTML</title>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+    const array = ['红颜旧', '元夕', '一眼千年', '醉红颜', '故梦'];
+
+    // 从数组中随机选择一个元素
+    const randomElement = array[Math.floor(Math.random() * array.length)];
+
+    // 创建一个新的 <p> 元素
+    const paragraph = document.createElement('p');
+
+    // 将随机选择的元素作为文本内容添加到 <p> 元素中
+    paragraph.textContent = randomElement;
+
+    // 将 <p> 元素添加到 HTML 文件中的某个容器元素中
+    document.getElementById('container').appendChild(paragraph);
+  </script>
+</body>
+</html>
