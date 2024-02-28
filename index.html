@@ -7,12 +7,14 @@
 <body>
 
   <p>2024-02-28 14:56:08</p>
-  <p>==========================================</p>
+  <p>-----------------------------------------</p>
 
   随机洞箫曲目，刷新重选：
-  <div style="font-size: 18px">
-    <span>《</span><span id="container"></span><span>》</span>
+  <div style="font-size:20px;font-weight:600;">
+    <span id="container"></span>
   </div>
+
+  <p>-----------------------------------------</p>
 
   <script>
     const array = ['红颜旧', '元夕', '一眼千年', '醉红颜', '故梦'];
@@ -24,7 +26,7 @@
     const paragraph = document.createElement('p');
 
     // 将随机选择的元素作为文本内容添加到 <p> 元素中
-    paragraph.textContent = randomElement;
+    paragraph.textContent = '《' + randomElement + '》';
 
     // 将 <p> 元素添加到 HTML 文件中的某个容器元素中
     document.getElementById('container').appendChild(paragraph);
