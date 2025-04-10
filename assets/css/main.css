@@ -90,7 +90,8 @@ ul, ol {
 }
 
 .menu {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
 }
