@@ -27,13 +27,13 @@ ul, ol {
 
 .vi {
     position: relative;
-    margin: 100px auto 0;
+    margin: 30px auto 0;
     width: 960px;
 }
 
 @media (max-width: 767px) {
     .vi {
-        margin-top: 50px;
+        margin-top: 20px;
         width: auto;
     }
 }
