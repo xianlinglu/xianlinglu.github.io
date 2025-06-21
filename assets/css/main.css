@@ -45,7 +45,7 @@ ul, ol {
     text-align: center;
     position: relative;
     top: -10px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .quote {
