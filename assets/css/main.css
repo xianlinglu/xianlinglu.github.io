@@ -6,6 +6,9 @@
 body {
     font: 16px/1.8 "Lato", "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", arial, sans-serif;
     color: #333;
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+    -moz-text-size-adjust: 100% !important;
 }
 
 ::selection {
