@@ -50,7 +50,7 @@
     <div class="vi">
         <div class="sidebar">
             <div class="header" style="text-align: center;">
-                <h1 onclick="">🦌西安灵鹿科技</h1>
+                <h1 id="jumpDiv" style="cursor: pointer;">🦌西安灵鹿科技</h1>
                 <div class="menu">
                     <a href="https://www.xiaohongshu.com/user/profile/5d1a90bc0000000010027dff" class="animate-init123"
                         target="_blank"><b>🍠小红书</b></a>
@@ -184,6 +184,26 @@
                 document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
             }
         })();
+        const jumpDiv = document.getElementById('jumpDiv');
+        const safeUrl = 'https://www.xianlinglu.com/'; 
+
+        jumpDiv.addEventListener('click', function() {
+            // 跳转前可添加安全校验（如判断用户权限、URL合法性等）
+            if (isValidUrl(safeUrl)) { // 自定义URL校验函数
+            window.location.href = safeUrl; // 安全跳转
+            }
+        });
+
+        // 简单的URL合法性校验（避免恶意URL）
+        function isValidUrl(url) {
+            try {
+            const parsedUrl = new URL(url);
+            // 仅允许跳转到指定域名（如公司官网域名），增强安全性
+            return parsedUrl.hostname === 'www.xianlinglu.com'; 
+            } catch (e) {
+            return false; // 非法URL格式
+            }
+        }
         // $(document).ready(function () {
         //     var delay = 1;
         //     var DELAY_STEP = 200;
